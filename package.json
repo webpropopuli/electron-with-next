@@ -1,0 +1,46 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "next build renderer && next export renderer",
+    "dist": "npm run build && build"
+  },
+  "keywords": [
+    "Electron",
+    "NextJS",
+    "React"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "bundle": {
+    "name": "ElectronNext"
+  },
+  "build": {
+    "files": [
+      "**/*",
+      "!renderer",
+      "renderer/out"
+    ]
+  },
+  "devDependencies": {
+    "bundle": "^2.1.0",
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0",
+    "next": "^8.1.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "app-root-path": "^2.2.1",
+    "axios": "^0.18.0",
+    "electron-is-dev": "^1.1.0",
+    "electron-next": "^3.1.5",
+    "node-sass": "^4.11.0"
+  }
+}
